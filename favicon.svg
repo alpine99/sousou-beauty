@@ -1,13 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
   <defs>
-    <linearGradient id="g" x1="20" y1="16" x2="100" y2="112" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F1DDAF"/>
-      <stop offset="0.55" stop-color="#C79A58"/>
-      <stop offset="1" stop-color="#8C6937"/>
+    <linearGradient id="gold" x1="48" y1="40" x2="272" y2="284" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2CE"/>
+      <stop offset="0.38" stop-color="#D3AC68"/>
+      <stop offset="0.72" stop-color="#B38442"/>
+      <stop offset="1" stop-color="#7A572B"/>
     </linearGradient>
+    <radialGradient id="paper" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 145) rotate(90) scale(178)">
+      <stop stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#F1E4D2"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#5C3A18" flood-opacity=".14"/>
+    </filter>
   </defs>
-  <rect x="6" y="6" width="116" height="116" rx="28" fill="#FFF9F0"/>
-  <rect x="6" y="6" width="116" height="116" rx="28" stroke="#ECDAB7"/>
-  <path d="M43 31C53 22 70 23 79 34C87 43 84 55 75 61C68 66 59 67 53 72C45 79 43 91 49 99C56 108 69 111 81 106C89 103 94 97 97 90" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
-  <path d="M76 34C69 36 63 42 63 49C62 58 69 64 77 65C86 66 92 72 92 80C92 89 84 97 73 99" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+  <rect x="16" y="16" width="288" height="288" rx="72" fill="url(#paper)" filter="url(#shadow)"/>
+  <rect x="17.5" y="17.5" width="285" height="285" rx="70.5" stroke="#E6D2AD" stroke-width="3"/>
+  <path d="M70 160C70 110.294 110.294 70 160 70C209.706 70 250 110.294 250 160C250 209.706 209.706 250 160 250C110.294 250 70 209.706 70 160Z" stroke="url(#gold)" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M95 232C116 249 137 257 160 257C183 257 204 249 225 232" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" opacity=".52"/>
+  <text x="160" y="188" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="108" font-weight="700" fill="url(#gold)" letter-spacing="-7">SB</text>
+  <text x="160" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#87612F" letter-spacing="4">SOUSOU</text>
 </svg>
