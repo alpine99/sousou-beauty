@@ -3,13 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sousou Beauty | Beauty Clinic in Akkar</title>
-  <meta name="description" content="Sousou Beauty في عكار، طريق القبيات مقابل محطة حاكمة. فيلر، بوتوكس، ميكاب وأظافر. للحجز عبر واتساب: 76 469 430." />
-  <meta name="theme-color" content="#17120f" />
-  <meta property="og:title" content="Sousou Beauty | Beauty Clinic in Akkar" />
-  <meta property="og:description" content="فيلر، بوتوكس، ميكاب وأظافر — حجز مباشر عبر واتساب." />
-  <meta property="og:image" content="hero-premium.jpg" />
+  <title>Sousou Beauty | Luxury Beauty Clinic in Akkar</title>
+  <meta name="description" content="Sousou Beauty في عكار، طريق القبيات مقابل محطة حاكمة. فيلر، بوتوكس، ميكاب وأظافر. حجز مباشر عبر واتساب: 76 469 430." />
+  <meta name="theme-color" content="#151210" />
+  <meta property="og:title" content="Sousou Beauty | Luxury Beauty Clinic in Akkar" />
+  <meta property="og:description" content="Filler • Botox • Makeup • Nails — direct WhatsApp booking." />
+  <meta property="og:image" content="social-preview.jpg" />
   <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Sousou Beauty",
+    "telephone": "+96176469430",
+    "address": "Akkar, Kobayat Road, opposite Hakmeh station",
+    "url": "https://sousoubeauty.com",
+    "sameAs": [
+      "https://www.instagram.com/souss_100",
+      "https://www.tiktok.com/@sousoujoujou95"
+    ]
+  }
+  </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,30 +33,32 @@
 </head>
 <body>
   <div class="preloader" aria-hidden="true">
-    <span class="monogram">SB</span>
+    <span>SB</span>
     <small>Sousou Beauty</small>
   </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="Sousou Beauty">
-        <span class="brand-mark" aria-hidden="true">SB</span>
-        <span class="brand-copy">
+        <img src="logo.svg" alt="Sousou Beauty SB Logo" />
+        <span>
           <strong>Sousou Beauty</strong>
           <small>BEAUTY CLINIC • AKKAR</small>
         </span>
       </a>
 
       <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <i></i><i></i><i></i>
       </button>
 
       <nav class="nav" aria-label="Main navigation">
-        <a href="#about">عن المركز</a>
         <a href="#services">الخدمات</a>
+        <a href="#experience">التجربة</a>
         <a href="#gallery">الصور</a>
         <a href="#location">العنوان</a>
-        <a href="#contact">تواصل</a>
+        <a href="#contact">التواصل</a>
         <a class="nav-cta" href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">احجزي الآن</a>
       </nav>
     </div>
@@ -50,22 +66,24 @@
 
   <main>
     <section class="hero" aria-label="Sousou Beauty">
-      <div class="hero-slide is-active" style="--bg:url('hero-premium.jpg')"></div>
-      <div class="hero-slide" style="--bg:url('visual-care.jpg')"></div>
-      <div class="hero-slide" style="--bg:url('visual-ambience.jpg')"></div>
-      <div class="hero-shade"></div>
+      <div class="hero-slide is-active" style="--bg:url('hero-main.jpg')"></div>
+      <div class="hero-slide" style="--bg:url('slide-filler.jpg')"></div>
+      <div class="hero-slide" style="--bg:url('slide-makeup.jpg')"></div>
+      <div class="hero-layer"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
 
       <div class="hero-inner">
         <div class="hero-copy reveal">
-          <p class="eyebrow">LUXURY BEAUTY EXPERIENCE</p>
-          <h1>جمالكِ يبدأ من <span>Sousou Beauty</span></h1>
-          <p class="hero-text">فيلر، بوتوكس، ميكاب وأظافر بلمسة راقية وأجواء هادئة تمنحكِ تجربة مرتبة، أنيقة، ومريحة من أول لحظة.</p>
+          <p class="eyebrow">GLOBAL BEAUTY EXPERIENCE</p>
+          <h1>Luxury beauty,<br><span>elegance & confidence.</span></h1>
+          <p class="hero-ar">Sousou Beauty تجربة جمالية أنيقة في عكار — فيلر، بوتوكس، ميكاب وأظافر بلمسة فاخرة وصور احترافية وهوية راقية.</p>
 
-          <div class="hero-tags" aria-label="Services">
-            <span>Nails</span>
-            <span>Makeup</span>
+          <div class="hero-tags">
             <span>Filler</span>
             <span>Botox</span>
+            <span>Makeup</span>
+            <span>Nails</span>
           </div>
 
           <div class="hero-actions">
@@ -74,97 +92,110 @@
           </div>
         </div>
 
-        <aside class="hero-card reveal">
-          <span class="card-label">Quick booking</span>
-          <strong class="phone-number" dir="ltr">76&nbsp;469&nbsp;430</strong>
-          <p>اضغطي على الرقم أو زر واتساب لفتح المحادثة مباشرة.</p>
-          <a href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">Open WhatsApp</a>
+        <aside class="booking-card reveal">
+          <span>DIRECT BOOKING</span>
+          <a dir="ltr" href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">76&nbsp;469&nbsp;430</a>
+          <p>اضغطي على الرقم لفتح واتساب مباشرة واختيار موعدك.</p>
         </aside>
       </div>
 
       <div class="hero-dots" aria-hidden="true"><span class="active"></span><span></span><span></span></div>
-      <a class="scroll-cue" href="#about" aria-label="انزلي للأسفل">⌄</a>
     </section>
 
-    <section class="section about" id="about">
-      <div class="section-inner about-grid">
+    <section class="section intro">
+      <div class="section-inner intro-grid">
         <div class="reveal">
-          <p class="eyebrow dark">ABOUT SOUSOU BEAUTY</p>
-          <h2>مركز جمالي مرتب بهوية راقية.</h2>
-          <p class="lead">تم تصميم الصفحة لتكون واضحة، فاخرة، وسريعة على الهاتف. كل قسم يخدم هدفًا واحدًا: تعريف الزبونة بالخدمات وتسهيل الحجز عبر واتساب بدون تعقيد.</p>
+          <p class="eyebrow dark">SOUSOU BEAUTY</p>
+          <h2>Refined beauty care in Akkar.</h2>
         </div>
-        <div class="info-tiles reveal">
-          <article><strong>SB</strong><span>هوية فاخرة جديدة</span></article>
-          <article><strong>4</strong><span>خدمات رئيسية</span></article>
-          <article><strong>WA</strong><span>حجز مباشر وسريع</span></article>
-        </div>
+        <p class="lead reveal">موقع أنيق، صور جديدة، وخدمات مرتبة بوضوح لتقديم تجربة عالمية راقية تعكس هوية Sousou Beauty وتسهّل الحجز بسرعة.</p>
       </div>
     </section>
 
     <section class="section services" id="services">
       <div class="section-heading reveal">
         <p class="eyebrow dark">SIGNATURE SERVICES</p>
-        <h2>الخدمات الأكثر طلبًا</h2>
-        <p>بطاقات واضحة ومصممة بأسلوب فاخر لعرض خدمات Sousou Beauty بشكل احترافي.</p>
+        <h2>الخدمات الأساسية</h2>
+        <p>خدمات جمالية راقية مع عرض واضح لكل خدمة وحجز مباشر عبر واتساب.</p>
       </div>
 
       <div class="service-grid section-inner">
         <article class="service-card reveal">
-          <div class="service-image" style="--img:url('service-filler.jpg')"></div>
-          <div class="service-body">
+          <img src="service-filler.jpg" alt="Filler service" />
+          <div>
             <span>01</span>
             <h3>Filler</h3>
-            <p>لمسة جمالية ناعمة لإبراز الملامح بشكل متوازن وأنيق.</p>
-            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Filler." target="_blank" rel="noopener">احجزي الخدمة</a>
+            <p>تحديد ناعم للملامح وإبراز الجمال الطبيعي بلمسة أنيقة.</p>
+            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Filler." target="_blank" rel="noopener">احجزي Filler</a>
           </div>
         </article>
 
         <article class="service-card reveal">
-          <div class="service-image" style="--img:url('service-botox.jpg')"></div>
-          <div class="service-body">
+          <img src="service-botox.jpg" alt="Botox service" />
+          <div>
             <span>02</span>
             <h3>Botox</h3>
-            <p>إطلالة أكثر نعومة وانتعاشًا مع حجز واستشارة داخل المركز.</p>
-            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Botox." target="_blank" rel="noopener">احجزي الخدمة</a>
+            <p>نتائج ناعمة ومنتعشة داخل أجواء احترافية وهادئة.</p>
+            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Botox." target="_blank" rel="noopener">احجزي Botox</a>
           </div>
         </article>
 
         <article class="service-card reveal">
-          <div class="service-image" style="--img:url('service-makeup.jpg')"></div>
-          <div class="service-body">
+          <img src="service-makeup.jpg" alt="Makeup service" />
+          <div>
             <span>03</span>
             <h3>Makeup</h3>
-            <p>ميكاب ناعم أو فاخر للمناسبات، الصور، والسهرات.</p>
-            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Makeup." target="_blank" rel="noopener">احجزي الخدمة</a>
+            <p>إطلالة ميكاب فاخرة للمناسبات والسهرات والظهور المميز.</p>
+            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Makeup." target="_blank" rel="noopener">احجزي Makeup</a>
           </div>
         </article>
 
         <article class="service-card reveal">
-          <div class="service-image" style="--img:url('service-nails.jpg')"></div>
-          <div class="service-body">
+          <img src="service-nails.jpg" alt="Nails service" />
+          <div>
             <span>04</span>
             <h3>Nails</h3>
-            <p>أظافر مرتبة بلمسة أنثوية عصرية تكمل الإطلالة.</p>
-            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Nails." target="_blank" rel="noopener">احجزي الخدمة</a>
+            <p>أظافر مرتبة وراقية تكمل الإطلالة بأسلوب ناعم وعصري.</p>
+            <a href="https://wa.me/96176469430?text=Hello%20Sousou%20Beauty%2C%20I%20want%20to%20book%20Nails." target="_blank" rel="noopener">احجزي Nails</a>
           </div>
         </article>
       </div>
     </section>
 
+    <section class="section atelier" id="experience">
+      <div class="section-inner atelier-grid">
+        <div class="atelier-card reveal">
+          <span>01</span>
+          <h3>Luxury</h3>
+          <p>هوية فاخرة وأسلوب عالمي أنيق.</p>
+        </div>
+        <div class="atelier-card reveal">
+          <span>02</span>
+          <h3>Comfort</h3>
+          <p>تجربة هادئة ومريحة من أول تواصل حتى نهاية الزيارة.</p>
+        </div>
+        <div class="atelier-card reveal">
+          <span>03</span>
+          <h3>Professional</h3>
+          <p>صور حديثة، عرض منظم، وحجز مباشر واضح.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section experience">
       <div class="section-inner experience-grid">
-        <div class="experience-photo reveal">
-          <img src="visual-details.jpg" alt="Sousou Beauty details" />
+        <div class="image-frame reveal">
+          <img src="detail-premium.jpg" alt="Sousou Beauty premium care" />
         </div>
-        <div class="experience-copy reveal">
-          <p class="eyebrow dark">PREMIUM EXPERIENCE</p>
-          <h2>تفاصيل هادئة ومظهر عالمي.</h2>
-          <p class="lead">تم ترتيب الصور، الأزرار، النصوص، والمسافات ليظهر الموقع نظيفًا وجذابًا بدون ازدحام. التصميم يعتمد على الأسود الفاخر، الذهبي الناعم، والخلفيات الهادئة.</p>
+        <div class="reveal">
+          <p class="eyebrow dark">THE EXPERIENCE</p>
+          <h2>أناقة، ترتيب، ونتيجة تليق بكِ.</h2>
+          <p class="lead">تم تحديث الموقع ليعكس مستوى أكثر فخامة ويعرض الخدمات بصورك الجديدة بدل الصور القديمة، مع الحفاظ على الشعار نفسه والهوية الراقية للمركز.</p>
           <ul class="check-list">
-            <li>شعار SB واضح بدون صورة مكسورة.</li>
-            <li>أرقام وحسابات السوشال بالاتجاه الصحيح.</li>
-            <li>أزرار واتساب مباشرة في أهم الأماكن.</li>
-            <li>تصميم موبايل مرتب وسهل الاستخدام.</li>
+            <li>صور جديدة راقية داخل الموقع.</li>
+            <li>حجز مباشر عبر WhatsApp.</li>
+            <li>خدمات مرتبة وواضحة.</li>
+            <li>عنوان سهل وواضح في عكار.</li>
           </ul>
         </div>
       </div>
@@ -173,26 +204,25 @@
     <section class="section booking">
       <div class="section-inner booking-box reveal">
         <div>
-          <p class="eyebrow">DIRECT WHATSAPP BOOKING</p>
-          <h2>للحجز المباشر</h2>
-          <p>الرقم يظهر بشكل صحيح، والضغط عليه يفتح واتساب مباشرة.</p>
+          <p class="eyebrow">DIRECT BOOKING</p>
+          <h2>احجزي موعدكِ الآن</h2>
+          <p>اضغطي على الرقم لفتح واتساب مباشرة.</p>
         </div>
-        <a class="booking-number" dir="ltr" href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">76&nbsp;469&nbsp;430</a>
+        <a class="big-phone" dir="ltr" href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">76&nbsp;469&nbsp;430</a>
       </div>
     </section>
 
     <section class="section gallery" id="gallery">
       <div class="section-heading reveal">
         <p class="eyebrow dark">GALLERY</p>
-        <h2>صور من الأجواء</h2>
+        <h2>صور جديدة داخل الموقع</h2>
       </div>
-
       <div class="gallery-grid section-inner">
-        <a class="gallery-item tall reveal" href="hero-premium.jpg" target="_blank" style="--img:url('hero-premium.jpg')"><span>المركز</span></a>
-        <a class="gallery-item reveal" href="visual-care.jpg" target="_blank" style="--img:url('visual-care.jpg')"><span>العناية</span></a>
-        <a class="gallery-item reveal" href="visual-details.jpg" target="_blank" style="--img:url('visual-details.jpg')"><span>التفاصيل</span></a>
-        <a class="gallery-item reveal" href="visual-ambience.jpg" target="_blank" style="--img:url('visual-ambience.jpg')"><span>الأجواء</span></a>
-        <a class="gallery-item wide reveal" href="beauty-details.jpg" target="_blank" style="--img:url('beauty-details.jpg')"><span>لمسة أنيقة</span></a>
+        <a class="gallery-item tall reveal" href="gallery-clinic.jpg" target="_blank" style="--img:url('gallery-clinic.jpg')"><span>Clinic</span></a>
+        <a class="gallery-item reveal" href="gallery-facial.jpg" target="_blank" style="--img:url('gallery-facial.jpg')"><span>Facial</span></a>
+        <a class="gallery-item reveal" href="gallery-makeup.jpg" target="_blank" style="--img:url('gallery-makeup.jpg')"><span>Makeup</span></a>
+        <a class="gallery-item reveal" href="gallery-nails.jpg" target="_blank" style="--img:url('gallery-nails.jpg')"><span>Nails</span></a>
+        <a class="gallery-item wide reveal" href="service-botox.jpg" target="_blank" style="--img:url('service-botox.jpg')"><span>Sousou Beauty</span></a>
       </div>
     </section>
 
@@ -202,11 +232,10 @@
           <p class="eyebrow dark">LOCATION</p>
           <h2>العنوان</h2>
           <p class="address">عكار، طريق القبيات، مقابل محطة حاكمة</p>
-          <p class="lead small">افتحي الخريطة أو ابدئي المحادثة عبر واتساب مباشرة.</p>
         </div>
         <div class="location-actions">
-          <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%83%D8%A7%D8%B1%20%D8%B7%D8%B1%D9%8A%D9%82%20%D8%A7%D9%84%D9%82%D8%A8%D9%8A%D8%A7%D8%AA%20%D9%85%D9%82%D8%A7%D8%A8%D9%84%20%D9%85%D8%AD%D8%B7%D8%A9%20%D8%AD%D8%A7%D9%83%D9%85%D8%A9" target="_blank" rel="noopener">افتحي Google Maps</a>
-          <a class="btn btn-dark" href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=%D8%B9%D9%83%D8%A7%D8%B1%20%D8%B7%D8%B1%D9%8A%D9%82%20%D8%A7%D9%84%D9%82%D8%A8%D9%8A%D8%A7%D8%AA%20%D9%85%D9%82%D8%A7%D8%A8%D9%84%20%D9%85%D8%AD%D8%B7%D8%A9%20%D8%AD%D8%A7%D9%83%D9%85%D8%A9" target="_blank" rel="noopener">افتحي الخريطة</a>
+          <a class="btn btn-dark" href="https://wa.me/96176469430" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </section>
@@ -218,7 +247,7 @@
       </div>
 
       <div class="contact-grid section-inner">
-        <a class="contact-card reveal" href="https://wa.me/96176469430?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Sousou%20Beauty%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF." target="_blank" rel="noopener">
+        <a class="contact-card reveal" href="https://wa.me/96176469430" target="_blank" rel="noopener">
           <span>WHATSAPP</span>
           <strong dir="ltr">76&nbsp;469&nbsp;430</strong>
         </a>
@@ -236,14 +265,14 @@
 
   <footer class="footer">
     <div class="footer-brand">
-      <span class="brand-mark footer-mark" aria-hidden="true">SB</span>
+      <img src="logo.svg" alt="Sousou Beauty SB logo" />
       <div>
         <strong>Sousou Beauty</strong>
-        <p>فيلر · بوتوكس · ميكاب · أظافر — عكار، طريق القبيات.</p>
+        <p>Filler • Botox • Makeup • Nails — Akkar, Kobayat Road.</p>
       </div>
     </div>
     <div class="footer-links">
-      <a href="#services">الخدمات</a>
+      <a href="#services">Services</a>
       <a href="https://www.instagram.com/souss_100?igsh=MXB5aGh5OHp4a2M5NQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.tiktok.com/@sousoujoujou95?_r=1&_t=ZS-97JbK559PS1" target="_blank" rel="noopener">TikTok</a>
       <a href="https://wa.me/96176469430" target="_blank" rel="noopener">WhatsApp</a>

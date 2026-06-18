@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
   <defs>
-    <linearGradient id="gold" x1="48" y1="40" x2="272" y2="284" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF2CE"/>
-      <stop offset="0.38" stop-color="#D3AC68"/>
-      <stop offset="0.72" stop-color="#B38442"/>
-      <stop offset="1" stop-color="#7A572B"/>
+    <linearGradient id="gold" x1="42" y1="36" x2="278" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7DC"/>
+      <stop offset="0.38" stop-color="#DAB572"/>
+      <stop offset="0.72" stop-color="#B38648"/>
+      <stop offset="1" stop-color="#78542A"/>
     </linearGradient>
-    <radialGradient id="paper" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 145) rotate(90) scale(178)">
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 142) rotate(90) scale(180)">
       <stop stop-color="#FFFDF8"/>
       <stop offset="1" stop-color="#F1E4D2"/>
     </radialGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#5C3A18" flood-opacity=".14"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#583712" flood-opacity=".16"/>
     </filter>
   </defs>
-  <rect x="16" y="16" width="288" height="288" rx="72" fill="url(#paper)" filter="url(#shadow)"/>
-  <rect x="17.5" y="17.5" width="285" height="285" rx="70.5" stroke="#E6D2AD" stroke-width="3"/>
-  <path d="M70 160C70 110.294 110.294 70 160 70C209.706 70 250 110.294 250 160C250 209.706 209.706 250 160 250C110.294 250 70 209.706 70 160Z" stroke="url(#gold)" stroke-opacity=".28" stroke-width="2"/>
-  <path d="M95 232C116 249 137 257 160 257C183 257 204 249 225 232" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" opacity=".52"/>
+  <rect x="16" y="16" width="288" height="288" rx="72" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect x="18" y="18" width="284" height="284" rx="70" stroke="#E6D2AD" stroke-width="3"/>
+  <circle cx="160" cy="152" r="86" stroke="url(#gold)" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M94 232C115 249 137 257 160 257C183 257 205 249 226 232" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" opacity=".52"/>
   <text x="160" y="188" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="108" font-weight="700" fill="url(#gold)" letter-spacing="-7">SB</text>
   <text x="160" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#87612F" letter-spacing="4">SOUSOU</text>
 </svg>

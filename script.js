@@ -3,6 +3,7 @@ const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const slides = [...document.querySelectorAll('.hero-slide')];
 const dots = [...document.querySelectorAll('.hero-dots span')];
+const progress = document.querySelector('.scroll-progress');
 let current = 0;
 
 function setSlide(index) {
@@ -14,22 +15,25 @@ function setSlide(index) {
   dots[current]?.classList.add('active');
 }
 
-if (slides.length > 1) {
-  setInterval(() => setSlide((current + 1) % slides.length), 5200);
-}
-
+if (slides.length > 1) setInterval(() => setSlide((current + 1) % slides.length), 5400);
 dots.forEach((dot, index) => dot.addEventListener('click', () => setSlide(index)));
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 18);
-});
+function onScroll() {
+  const y = window.scrollY || document.documentElement.scrollTop;
+  header.classList.toggle('scrolled', y > 18);
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  const value = max > 0 ? (y / max) * 100 : 0;
+  if (progress) progress.style.width = `${value}%`;
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 toggle?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-document.querySelectorAll('.nav a').forEach((link) => {
+document.querySelectorAll('.nav a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     toggle?.setAttribute('aria-expanded', 'false');
@@ -37,7 +41,7 @@ document.querySelectorAll('.nav a').forEach((link) => {
 });
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+  entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       observer.unobserve(entry.target);
@@ -45,4 +49,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
